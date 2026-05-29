@@ -1,30 +1,20 @@
-# Warehouse for ESLint
+# Reproduction Code for ESLint
 
 > [!NOTE]
-> My dedicated repository for reproduction code and proposal PRs for `eslint`
-> and `eslint-stylistic`.
+> Conflict between `@stylistic/key-spacing` and `@stylistic/type-annotation-spacing`
 
-This repository uses isolated branches to organize and track progress on
-specific tasks. Once a branch's goal is achieved or canceled, it will be
-converted into a tag for permanent archiving. This approach keeps my project
-history clean and easy to follow.
+## Problems
 
-> [!TIP]
-> For detailed information regarding the purpose and usage of a branch, please
-> refer to its specific `README.md` file.
+Enabling both `key-spacing` (aligning colons) and `type-annotation-spacing`
+causes ESLint to throw a circular fixes warning and fail to resolve formatting.
 
-## Branch Patterns
-
-- `{origin}/{purpose}/{name}`
-- `{origin}`:
-  - `core/*`    → eslint repo
-  - `style/*`   → eslint-stylistic repo
-- `{purpose}`:
-  - `reprod/*`  → reproduction code
-  - `idea/*`    → proposal
-- `{name}` a short name follow this pattern `[a-zA-Z0-9\-]`
+```log
+2026-05-29 69:69:69.404 [error] (node:3269630) ESLintCircularFixesWarning: Circular fixes detected while fixing /home/user/eslint-warehouse/src/fail.ts. It is likely that you have conflicting rules in your configuration.
+```
 
 ## Bookmarks
+
+- [Applied for issue#]()
 
 - [ESLint](https://eslint.org)
 - [ESLint: Repository](https://github.com/eslint/eslint)
