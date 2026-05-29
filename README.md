@@ -14,7 +14,7 @@ causes ESLint to throw a circular fixes warning and fail to resolve formatting.
 
 ## Bookmarks
 
-- [Applied for issue#]()
+- [Applied for issue#1219](https://github.com/eslint-stylistic/eslint-stylistic/issues/1219)
 
 - [ESLint](https://eslint.org)
 - [ESLint: Repository](https://github.com/eslint/eslint)
